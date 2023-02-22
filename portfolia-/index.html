@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family:'Times New Roman', Times, serif;
+            scroll-behavior: smooth;
+        }
+        @media(max-width:640px){
+            .header{
+                width: 90%;
+            }
+            .hamburget{
+                display: block;
+                margin-right: 0.5rem;
+            }
+        }
+
+        /* Button-design */
+        .btn-pink{
+    background-color: #e84949;
+    width: fit-content;
+    color: white;
+    padding: 0.2rem 2.3rem;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 500;
+    border: solid 3px transparent;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+}
+.btn-pink::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: translateX(-100%);
+    
+}
+.btn-pink:hover::before {
+    transition: all 1s ease;
+    transform: translateX(0);
+  }
+  .btn-pink:hover{
+    color: black;
+  }
+  .hero-right-section{
+    position: relative;
+  }
+ 
+
+.user-image{
+    width: 30rem; 
+    border-radius: 0.5rem;
+    height: 22rem;
+}
+  .project-1{
+    background-image: url(./images/razor.png);
+    background-position: right;
+    background-size: cover;
+    border-radius: 10px;
+    opacity: 0.9;
+  }
+  .project-2{
+    background-image: url(./images/discord.jpg);
+    background-position: right;
+    background-size: cover;
+    border-radius: 10px;
+    opacity: 0.9;
+  }
+  .project-3{
+    background-image: url(./images/razor.png);
+    background-position: right;
+    background-size: cover;
+    border-radius: 10px;
+    opacity: 0.9;
+  }
+  
+  /* project-images */
+  .images img{
+    width: 20%;
+  }
+
+  /* project-box-shadow */
+  .sha{
+    box-shadow: 5px 5px 3px black;
+  }
+  
+  /* form */
+  form{
+    width: 100%;
+  }
+  form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    color: black;
+    font-size: 1.2rem;
+    border-radius: 6px;
+  }
+ .svg{
+    background-image: url("./images/bg1-svg.jpg");
+    background-position: center;
+    background-size: cover;
+ }
+ .main{
+    background-color: #F8F9D2;
+ }
+  @media(max-width:640px){
+    .hero-section{
+        width: 90%;
+        margin-top: 4rem;
+        }
+        .role{
+            font-size: 1.9rem;
+            margin-right: 20px;
+        }
+        .span-class{
+          width: 32rem;
+    }
+    .hero-desc{
+        text-align: left;
+        font-size: 1.3rem;
+    }
+    .faded-text{
+        font-size: 4rem;
+        bottom: -4.5rem;
+        right: 25px;
+
+    }
+  }
+  @media(max-width:470px){
+    .hero-section{
+    }
+    .left-section-heading{
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+    .role{
+        font-size: 1.7rem;
+    }
+    .hero-desc{
+        font-size: 1rem;
+        padding-right: 80px;
+        text-align: left;
+    }
+    .span-class{
+        font-size: 2.5rem;
+    }
+    .faded-text{
+        font-size: 3rem;
+        bottom: -4.8rem;
+
+    }
+  }
+  @media(max-width:375px){
+    .hero-desc{
+        padding-right: 80px;
+        font-size: 1rem;
+    }
+    .span-class{
+        font-size: 2rem;
+    }
+    .role{
+        font-size: 1.2rem;
+    }
+  }
+  
+    </style>
+</head>
+<body class="">
+    <main class="w-full] overflow-x-hidden relative main">
+        
+            <header class="w-[80%] max-w-[75rem]  flex mt-4  justify-between items-center mx-auto md:w-[90%] sm:w-[90%] lg:w-[90%] header sticky
+            ">
+                <!--Logo-->
+                <div class="flex  font-bold drop-shadow-sm ml-3 ">
+                    <Span class="text-[crimson] text-5xl">K</Span><p class="text-2xl place-self-end">aisar sofi</p>
+                </div>
+    
+                <!--Hamburget-->
+                <div class=" cursor-pointer hidden sm:block sm:mr-4 md:hidden hamburget">
+                    <div class="w-[2rem] h-[0.4rem] rounded-md bg-black mb-1"></div>
+                    <div class="w-[2rem] h-[0.4rem] rounded-md bg-black mb-1"></div>
+                    <div class="w-[2rem] h-[0.4rem] rounded-md bg-black mb-1"></div>
+                </div>
+    
+                <!--list-->
+                <ul class="  p-4 gap-8 text-xl hidden md:block md:flex">
+                    <li class=" bg-[crimson] opacity-90 text-black"> <a href="#" class="p-2 hover:underline rounded-md duration-300">Home</a> </li>
+                    <li> <a href="#about-me" class="hover:underline p-2 rounded-md">About Me</a> </li>
+                    <li> <a href="#projects" class="hover:underline p-2 rounded-md">Projects</a> </li>
+                    <li> <a href="#contact" class="hover:underline p-2 rounded-md">Contact</a> </li>
+                </ul>
+               
+            </header>
+    
+    
+            <!--Hero-Section-->
+            <section class="w-[100%] relative">
+                <div class="w-[80%] max-w-[75rem]  mx-auto mt-14 flex place-items-center gap-6 pl-4 pr-4 xl:w-[100%] lg:w-[90%] lg:gap-0 md:mt-14 md:w-[90%] sm:w-[90%] sm:mt-16 hero-section">
+                    
+                    <!--Left-section-->
+                    <div class="flex flex-col gap-9 ">
+                        <div>
+                            <div><p class="text-5xl font-bold text-[#4e45d5] left-section-heading">Hi! Kaisar sofi</p></div>
+                        </div>
+                        <div class="text-[#4e45d5] font-extrabold text-5xl span-class">
+                            I am a <span class="role text-black md:text-2xl sm:text-3xl"></span>
+                        </div>
+                        <div class="font-bold text-xl w-[75%] md:text-left md:text-base sm:text-left hero-desc">
+                            <p class="text-justify">I’m a software developer and here is my portfolio website. Here you’ll learn about my journey.</p>
+                        </div>
+                        <div class="btn-pink" id="btn">Hire me</div>
+                    </div>
+                    
+    
+                    <!--Right-Section-->
+                    <div class="hero-right-section hidden md:block">
+                        <div class=" animate-scale p-[2rem] shadow-Xsm transition-all duration-300 lg:p-2px">
+                            <img src="/images/kaisar.jpeg" alt="kaisar" class="user-image">
+                        </div>
+                        
+                    </div>
+                </div>
+    
+                <!--faded-text-->
+                <div class="faded-text absolute select-none text-9xl text-[rgb(231,231,231)] font-bold -bottom-56  sm:right-7 sm:text-[5rem] sm:-bottom-[70px] md:left-12 md:-bottom-32 xl:left-16">kaisar Sofi</div>
+            </section>
+        
+             <!--project-section-->
+             <section class="w-[100%] relative" id="projects">
+            <div class="w-[85%] max-w-[75rem] mx-auto mt-24  md:mt-44 md:w-[90%]">
+              <div>
+                <p class="text-center text-red-500 text-5xl font-bold pb-3 pt-7">My Projects</p>
+              </div>  
+                <div class="grid grid-cols-1 pt-5 gap-6 mb-8 sm:grid-cols-2 md:grid-cols-3">
+                    <!--first-project-->
+                    <div class=" project-1 group pt-7 sha">
+                        <!--Inner-container-->
+                        <div class="p-7 w-[100%] flex flex-col gap-5 transition duration-1000 group-hover:scale-110">
+                            <!--images-->
+                            <div class="flex gap-4 w-[100%] images">
+                                <img src="./images/HTML.png" alt="">
+                                <img src="./images/CSS.png" alt="">
+                                <img src="./images/Javascript.svg" alt="">
+                                <img src="./images/Tailwind.png" alt="">
+                            </div>
+                            <div class="text-2xl text-white font-bold "><p>Project 1</p></div>
+                            <div class="text-white text-justify "><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure sequi obcaecati neque moll</p></div>
+                            <!--icon-->
+                            <div class="flex gap-7 text-white">
+                                <div><a href="#"><i class="fa fa-github hover:text-red-500 transition-all duration-300" style="font-size:40px"></i></a></div>
+                                <div><a href="#"><i class="fa fa-external-link  hover:text-red-500 transition-all duration-300" style="font-size:36px"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Second-project-->
+                    <div class=" project-2 group pt-7 sha">
+                        <!--Inner-container-->
+                        <div class="p-7 w-[100%] flex flex-col gap-4 transition duration-1000 group-hover:scale-110">
+                            <!--images-->
+                            <div class="flex gap-4 images w-[100%]">
+                                <img src="./images/HTML.png" alt="">
+                                <img src="./images/CSS.png" alt="">
+                                <img src="./images/Javascript.svg" alt="">
+                                <img src="./images/Tailwind.png" alt="">
+                            </div>
+                            <div class="text-2xl text-white font-bold "><p>Project 2</p></div>
+                            <div class="text-white text-justify "><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure sequi obcaecati neque moll</p></div>
+                            <!--icon-->
+                            <div class="flex gap-7 text-white">
+                                <div><a href="#"><i class="fa fa-github  hover:text-red-500 transition-all duration-300" style="font-size:40px "></i></a></div>
+                                <div><a href="#"><i class="fa fa-external-link  hover:text-red-500 transition-all duration-300" style="font-size:36px"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Third project-->
+                    <div class=" project-3 group pt-7 sha">
+                        <!--Inner-container-->
+                        <div class="p-7 w-[100%] flex flex-col gap-4 transition duration-1000 group-hover:scale-110">
+                            <!--images-->
+                            <div class="flex gap-4  images w-[100%]">
+                                <img src="./images/HTML.png" alt="">
+                                <img src="./images/CSS.png" alt="">
+                                <img src="./images/Javascript.svg" alt="">
+                                <img src="./images/Tailwind.png" alt="">
+                            </div>
+                            <div class="text-2xl text-white font-bold "><p>Project 3</p></div>
+                            <div class="text-white text-justify "><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure sequi obcaecati neque moll</p></div>
+                            <!--icon-->
+                            <div class="flex gap-7 text-white">
+                                <div class=""><a href="#" class=""><i class="fa fa-github  hover:text-red-500 transition-all duration-300" style="font-size:40px"></i></a></div>
+                                <div><a href="#"><i class="fa fa-external-link  hover:text-red-500 transition-all duration-300" style="font-size:36px"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--see-more-->
+                <div class="btn-pink mx-auto">See more</div>
+            </div>
+
+             </section>
+
+
+              <!--About-me-->
+              <section class="w-[100%] relative" id="about-me">
+            <!--container-->
+            <div class="w-[85%] max-w-[75rem]  mx-auto border lg:mt-28 border-slate-500  rounded-md mb-5 about mt-8">
+                <!-- Heading -->
+                <div class="flex flex-col justify-center items-center font-extrabold text-3xl pt-4 mt-6 text-[crimson] md:text-5xl">
+                <p><span>M</span>e and my Tech Stack 
+                </p>
+                <hr class="bg-[crimson] rounded-full w-[40%] mt-3 h-1">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 ">
+                    <!--Left-section-->
+                    <div class=" w-[100%] mb-5 p-4">
+                        <div class="flex flex-col gap-5">
+                            <div class=" text-5xl font-bold leading-[3rem] text-[crimson]  "><p><span class="text-7xl">A</span>bout me</p>
+                            
+                                <div class="w-[2rem] h-1 bg-[crimson] ml-2"></div>
+                            </div>
+                            <div class="text-lg text-justify">
+                                <p>I am kaisar Sofi graduated with a degree in computer Applications.I'm a Frontend Web developer and have a well understanding of modern web technologies <b>Html, CSS,Javascript,Tailwind,react</b>.As 
+                                     a web developer, I have a passion for creating visually appealing,functional and secure websites.As all of us know that ability is nothing without any
+                                    opportunity.I am looking for an opportunity to expand my skills in the industry
+                                    .<br> <p class="mt-2">I'm open to the full-time opportunity where i can contribute and can bring value to the organisation.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- right-section -->
+                      
+                        <div class="mb-5">
+
+                                <div class="font-bold text-4xl pl-3 text-[crimson] mt-4"><span class="text-6xl">S</span>kills</div>
+                                <div class="w-[2rem] h-1 bg-[crimson] mb-2 ml-3"></div>
+                            <!--inner-conatiner-->
+                            <div class="p-3 space-y-4">
+                                <!-- html-skill -->
+                                <div>
+                                    <div class=" flex justify-between font-bold text-xl">
+                                        <span>Html</span>
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="w-[100%] h-2 bg-[rgba(0,0,0,0.4)] rounded-full relative">
+                                        <div class="absolute bg-[crimson] w-[80%] h-2 rounded-full"></div>
+                                    </div>
+                                </div>
+                               <!--css-skill-->
+                                <div>
+                                    <div class=" flex justify-between font-bold text-xl">
+                                        <span>Css</span>
+                                        <span>70%</span>
+                                    </div>
+                                    <div class="w-[100%] h-2 bg-[rgba(0,0,0,0.4)] rounded-full relative">
+                                        <div class="absolute bg-[crimson] w-[70%] h-2 rounded-full"></div>
+                                    </div>
+                                </div>
+                                <!--tailwind-skill-->
+                                <div>
+                                    <div class=" flex justify-between font-bold text-xl">
+                                        <span>Tailwind</span>
+                                        <span>60%</span>
+                                    </div>
+                                    <div class="w-[100%] h-2 bg-[rgba(0,0,0,0.4)] rounded-full relative">
+                                        <div class="absolute bg-[crimson] w-[60%] h-2 rounded-full"></div>
+                                    </div>
+                                </div>
+
+                                <!--javascript-skill-->
+                                <div>
+                                    <div class=" flex justify-between font-bold text-xl">
+                                        <span>Javascript</span>
+                                        <span>60%</span>
+                                    </div>
+                                    <div class="w-[100%] h-2 bg-[rgba(0,0,0,0.4)] rounded-full relative">
+                                        <div class="absolute bg-[crimson] w-[60%] h-2 rounded-full"></div>
+                                    </div>
+                                </div>
+                                <!--react-skill-->
+                                <div>
+                                    <div class=" flex justify-between font-bold text-xl">
+                                        <span>React</span>
+                                        <span>50%</span>
+                                    </div>
+                                    <div class="w-[100%] h-2 bg-[rgba(0,0,0,0.4)] rounded-full relative">
+                                        <div class="absolute bg-[crimson] w-[50%] h-2 rounded-full"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          
+
+                            
+                           
+                            
+                           
+                        
+  
+                     
+                    </div>
+                </div>
+               </section>
+
+
+             <!--contact-section-->
+             <section class="w-[100%] relative bg-[rgba(0,0,0,0.4)]" id="contact">
+            <div class="w-[85%] max-w-[75rem] mx-auto  rounded-md mt-14 lg:mt-28 contact">
+                <!-- --Inner-container-- -->
+                <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
+                    <!--left-section-->
+                    <div class=" p-4"> 
+                        <!--contact-heading-->
+                        <div class="text-4xl font-bold text-[crimson] lg:text-5xl mb-4"><p> <span class="text-7xl">C</span>ontact Me</p></div>
+
+                        <!--contact-details-->
+                        <div class="flex flex-col gap-7">
+                           <div class="flex gap-5">
+                            <i class="fa fa-envelope" style="font-size:2rem;color: crimson;"></i>
+                            <p class="text-xl text-white"><a href="mailto:kaisarsofii@gmail.com">Kaisarsofii@gmail.com</a></p>
+                           
+                          </div>
+                          <div class="flex gap-5">
+                            <i class="fa fa-phone" style="font-size:2rem;color: crimson;"></i>
+                            <p class="text-xl text-white"> <a href="tel:7006114227">+91-7006114227</a></p>
+                           
+                          </div>
+                          <!--contact-icons-->
+                          <div class="flex gap-5">
+                            <a href="#">
+                                <i class="fa-brands fa-square-facebook  hover:text-[crimson] transition-all duration-300 cursor-pointer" style="font-size: 1.7rem;"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-github hover:text-red-500 transition-all duration-300 cursor-pointer" style="font-size: 1.7rem;"></i>
+                            </a>
+                          <a href="https://www.linkedin.com/in/kaisar-sofi-ba6146260/">
+                            <i class="fa fa-linkedin-square  hover:text-red-500 transition-all duration-300 cursor-pointer" style="font-size: 1.7rem;"></i>
+                          </a>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!--right-section-->
+                    <div>
+                        <!--inner-container-right-section-->
+                        <div class="mr-2 mb-5 ml-2">
+                            
+                                <form>
+                                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                                    <input type="text" name="email" id="email" placeholder="Enter your Email" required>
+                                    <textarea name="message" id="message" rows="6" placeholder="your message"></textarea>
+                                    <button type="submit " class="btn-pink border rounded-md">Submit</button>
+                                </form>
+                        
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+             <hr class="w-[80%] mx-auto h-1 mb-5">
+        
+             <!--Footer-->
+        <section class="w-[100%] relative">
+            <div class="w-full bg-[rgba(0,0,0,0.4)] p-5 flex justify-center">
+                <div class=" text-xl">
+                    <p class="flex flex-col text-center md:flex-row md:gap-2">&#169; Copyright 2023.Made by <span class="underline">Kaisar Sofi</span></p>
+
+                </div>
+            </div>
+        </section>
+        </section>
+
+       
+
+    </main>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+<script>
+    var typeData = new Typed(".role", {
+      strings: [
+        "Frontend Developer",
+        "Web Developer",
+        "Coder",
+      ],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1000,
+    });
+  </script>
+</html>
